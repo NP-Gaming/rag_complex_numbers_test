@@ -7,7 +7,7 @@ The project acts as a proof-of-concept. It is built on the Google GenAI SDK and 
 ## Features
 - **Data Injection (`file_uploader.py`):** Automatically uploads Markdown/PDF/Text files (i.e. notes) to Google AI Studio and saves a local file registry.
 - **Curriculum Guardrails (`rag.py`):** Strict prompt engineering ensures the AI tutor only uses course-approved notation and theorems (e.g., using the Identity Theorem instead of advanced complex logarithms).
-- **Quarto-rendered demo (`demo.qmd`):** shows a rendered .
+- **Quarto-rendered demo (`demo.qmd`):** shows a static HTML demonstrating the AI's output with parsed LaTeX formatting.
 
 ## Prerequisites
 - Python 3.9+

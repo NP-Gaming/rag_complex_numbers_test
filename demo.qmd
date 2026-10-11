@@ -1,0 +1,32 @@
+---
+title: "DTU Mathematics 1a: AI RAG Tutor for Complex numbers"
+author: "Noel"
+format:
+  html:
+    theme: cosmo
+    toc: true
+jupyter: python3
+---
+
+This is an example of the output from the `rag.py`. The AI Tutor processes the student's question and outputs curriculum-aligned Markdown, which is then rendered into this Quarto document.
+
+```{python}
+#| echo: false
+#| output: asis
+
+# 1. Import function from rag.py
+from rag import math_tutor_agent
+
+# 2. Define the student's question
+question = "How do I solve $e^z = 4 - 2i$?"
+
+# 3. Call the agent
+answer = math_tutor_agent(question)
+
+# 4. Print the output in raw Markdown format
+print("## Student Question:")
+print(f"> *{question}*")
+print("\n---\n")
+print("## AI Tutor Response:")
+print(answer)
+```
